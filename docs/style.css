@@ -6,15 +6,6 @@ body {
   padding: 0px;
   background-image: url('bg.png');
   background-size: cover;
-
-}
-@media screen and (max-width: 890px) {
-  h1 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 15px;
-  }
 }
 
 .header {
@@ -97,9 +88,15 @@ body {
   color: white;
 }
 
+
+
 .content {
   padding: 0px 50px;
   position: relative;
+}
+
+.content p {
+  font-size: 20px;
 }
 
 .fearture_box {
@@ -143,8 +140,8 @@ body {
 .feature_invite_button {
   border-radius: 20px;
   background-color: #cc33ff;
-  width: 200px;
-  height: 75px;
+  width: 300px;
+  height: 100px;
   margin: 10px auto;
   text-align: center;
   position: relative;
@@ -158,8 +155,8 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  font-size: 20px;
-  line-height: 75px;
+  font-size: 30px;
+  line-height: 100px;
 }
 @media screen and (max-width: 890px) {
   .feature_invite_button {
