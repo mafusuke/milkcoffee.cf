@@ -166,6 +166,7 @@ body {
 }
 
 .feature_invite_button a {
+  border-radius: 20px;
   text-decoration: none;
   position: absolute;
   top: 0;
@@ -175,13 +176,13 @@ body {
   color: white;
   font-size: 30px;
   line-height: 100px;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease 0s;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
 }
 
 .feature_invite_button a:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
-  transform: translateY(-0.3em);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 890px) {
@@ -211,7 +212,7 @@ body {
 }
 
 .footer_buttons {
-  width: 300px;
+  width: 277px;
   margin: 10px auto;
 }
 
