@@ -4,7 +4,7 @@ body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: 0px;
   padding: 0px;
-  background-image: url('bg.png');
+  background-image: url('./images/bg.png');
   background-size: cover;
 }
 
@@ -76,19 +76,37 @@ body {
 }
 .header_menu a {
   color: #391614;
+  position: relative;
+}
+
+.header_menu a::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #391614;
+  transition: all 0.3s ease 0s;
+}
+.header_menu a:hover::after {
+  width: 100%;
 }
 
 .header_invite_button {
   padding: 10px;
   background-color: #cc33ff;
   border-radius: 40px 0px 0px 40px;
+  transition: all 0.3s ease 0s;
+}
+
+.header_invite_button:hover {
+  background-color: #d8bfd8;
 }
 
 .header_invite_button a {
   color: white;
 }
-
-
 
 .content {
   padding: 0px 50px;
@@ -157,9 +175,63 @@ body {
   color: white;
   font-size: 30px;
   line-height: 100px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
 }
+
+.feature_invite_button a:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.3em);
+}
+
 @media screen and (max-width: 890px) {
   .feature_invite_button {
     width: 100%;
   }
+}
+
+.footer {
+  height: 200px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.footer_images {
+  height: auto;
+  width: 200px;
+  margin: 10px auto;
+  padding: 0px;
+}
+
+.footer_images img {
+  width: 40px;
+  height: auto;
+  margin: 0px 10px;
+}
+
+.footer_buttons {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.footer_buttons a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.footer_buttons a::after {
+  transform: translateY(-50%);
+}
+
+.footer_buttons a:hover {
+  background: white;
+	color: black;
+}
+
+
+
+.footer p {
+  text-align: center;
 }
