@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>コマンド一覧 | MilkCoffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./images/icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="header_title"><a href="./index">MilkCoffee</a></div>
+    <ul class="pc_menu">
+      <li class="header_menu"><a href="./command">コマンド一覧</a></li>
+      <li class="header_menu"><a href="./usage">使い方</a></li>
+      <li class="header_invite_button"> <a href="./links/invite">BOTを招待</a> </li>
+    </ul> <img class="phone_menu_open" id="open_menu" src="./images/open.png" alt="">
+    <div class="phone_menu"> <img class="phone_menu_close" id="close_menu" src="./images/close.png" alt="">
+      <ul>
+        <li><a href="./command">コマンド一覧</a></li>
+        <li><a href="./usage">使い方</a></li>
+        <li class="header_invite_button"><a href="./links/invite">BOTを追加</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <h1>コマンド一覧</h1>
+    <p> MilkCoffeeBOTのすべてのコマンドはこちらで確認できます。<br> 全くどう使うのか分からない!という方は<a href="">こちら</a>を先に確認してください。<br> 以下のカテゴリ名をクリックすると、そのカテゴリの場所にジャンプします。<br> コマンド名をクリックすると、そのコマンドの説明文が表示されます。 </p>
+    <ul class="command_menu">
+      <li><a href="#GlobalChat">GlobalChat</a></li>
+      <li><a href="#Notify">Notify</a></li>
+      <li><a href="#Costume">Costume</a></li>
+      <li><a href="#Information">Information</a></li>
+    </ul>
+    <!-- コマンドセクション開始 -->
+    <div id="GlobalChat">
+      <h1>GlobalChat</h1>
+      <p>他のサーバーに居る人と、設定したチャンネルでお話しできるよ!</p>
+      <div class="command_box" id="open_command">
+        <p>global [サブコマンド]</p>
+        <div class="command_description">
+          <p>グローバルチャットに関するコマンドだよ!<br>グローバルチャット設定をするためには、BOTが manage_webhook(webhookを管理) の権限を持ってて、コマンドの実行者が manage_channel(チャンネルの管理) 権限を持っている必要があるよ!</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>global join (チャンネル)</p>
+        <div class="command_description">
+          <p>グローバルチャットに接続するよ!。チャンネルを指定しなかったら、コマンドが実行されたチャンネルに設定するよ!。</p>
+          <p> m!global join ... コマンドを打ったチャンネルをグローバルチャットに接続します。<br>m!global join #チャンネル ... 指定したチャンネルをグローバルチャットに接続します。</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>global leave [チャンネル]</p>
+        <div class="command_description">
+          <p>指定したチャンネルをグローバルチャットから切断するよ!。(グローバルチャットに接続されているチャンネルではコマンドは実行できないから気を付けてね)</p>
+          <p> m!global leave #チャンネル ... 指定したチャンネルをグローバルチャットから切断します。</p>
+        </div>
+      </div>
+    </div>
+    <div id="Notify">
+      <h1>Notify</h1>
+      <p>お知らせの設定するよ!</p>
+      <div class="command_box" id="open_command">
+        <p>follow (チャンネル)</p>
+        <div class="command_description">
+          <p>BOTのお知らせをあなたのサーバーのチャンネルにお届けするよ!チャンネルを指定しなかったら、コマンドを実行したチャンネルにお知らせするよ!</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>notice (チャンネル)</p>
+        <div class="command_description">
+          <p>MilkChoco運営の更新情報をあなたのサーバーのチャンネルにお届けするよ!</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>unnotice (チャンネル)</p>
+        <div class="command_description">
+          <p>MilkChoco運営の更新情報の受け取りを停止するよ!</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>ads</p>
+        <div class="command_description">
+          <p>次広告が見れるまでの10分間のタイマーを設定するよ!広告見ようとはおもってるけど、忘れちゃう人向け。</p>
+        </div>
+      </div>
+    </div>
+    <div id="Costume">
+      <h1>Costume</h1>
+      <p>装飾シミュレータを操作できるよ！好みの組合せを探そう！</p>
+      <div class="command_box" id="open_command">
+        <p>set [装飾コード|各装飾の番号]</p>
+        <div class="command_description">
+          <p>装飾コードまたは各装飾の番号で設定できるよ!.</p>
+          <p> この二つのコマンドは両方ミルクアサルト初期武器(装飾無し)になるよ!。<br>m!set 1o4s3k ... 装飾コード1o4s3kで設定<br>m!set 0 1 1 0 0 0 ... 各アイテムの番号で設定<br>装飾コードは他の人の装飾を真似する際に便利だよ!</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>show (保存番号|保存名称)</p>
+        <div class="command_description">
+          <p>現在の装飾を表示できるよ!保存番号を指定したら、保存した作品の中から番号にあった作品を表示してあげる!</p>
+          <p> m!show ... 現在の装飾を表示<br>m!show 1 ... 1番目に保存された装飾を表示<br>m!show 無題1 ... 無題1という名前で保存された装飾を表示</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>load [保存番号|保存名称]</p>
+        <div class="command_description">
+          <p>保存した作品を番号または名称で指定して、現在の作業場に読み込むよ!</p>
+          <p> m!load 1 ... 1番目に保存された作品を読み込む<br>m!load 無題1 ... 無題1という名前で保存された作品を読み込む</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>save (保存名称)</p>
+        <div class="command_description">
+          <p>現在の装飾を保存できるよ!保存名称を指定しなかったら、'無題1'みたいな名前を自動でつけとくね!</p>
+          <p> m!save ... 作品を保存します(名前は自動で無題1のように付けられます)<br>m!save 新作品 ... 新作品という名前で作品を保存します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>my (ページ)</p>
+        <div class="command_description">
+          <p>保存した作品の一覧を表示できるよ!ページを指定しなかったら、1ページ目から表示するよ!でも、リアクションを押してページ移動もできるから心配しないでね!</p>
+          <p>略記: mylist</p>
+          <p> m!my ... 保存した作品集の1ページ目を表示します<br>m!my 2 ... 保存した作品集の2ページ目を表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>delete [保存番号|保存名称]</p>
+        <div class="command_description">
+          <p>保存した作品を番号または名称で指定して削除するよ!一度削除したらその作品は戻せないから気を付けてね!</p>
+          <p>略記: remove, del, rm</p>
+          <p> m!delete 1 ... 1番目に保存された作品を削除します<br>m!delete 旧作品... 旧作品という名前の作品を削除します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add [種類] [番号|名称]</p>
+        <div class="command_description">
+          <p>アイテムを追加するよ!<br>1つ目の'種類'にはbase/character/weapon/head/body/back(詳しくはhelpコマンドの?リアクションを押して確認してね)のいずれかを指定して、<br>2つ目の'番号|名称'にはアイテムの名前または番号を指定してね!</p>
+          <p> m!add weapon AT ... ATという名前の武器を追加します<br>m!add head 1 ... 1番の頭装飾を追加します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add body [番号|名称]</p>
+        <div class="command_description">
+          <p>体装飾を設定できるよ!</p>
+          <p>略記: d, bd, by</p>
+          <p> m!add body 5...番目の体装飾を設定します<br>m!add body n.s.suit ... n.s.suitという名前の体装飾を設定します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add character [番号|名称]</p>
+        <div class="command_description">
+          <p>キャラクターを設定できるよ!。</p>
+          <p>略記: c, ch, char</p>
+          <p> m!add character 2 ... 2番目のキャラクターを設定します<br>m!add character air ... キャラクターをairに設定します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add back [番号|名称]</p>
+        <div class="command_description">
+          <p>背中装飾を指定できるよ!</p>
+          <p>略記: b, bk, bc</p>
+          <p> m!add back 6...6番目の背中装飾を設定します<br>m!add back B.MOUSE ... B.MOUSEという名前の背中装飾を設定します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add weapon [番号|名称]</p>
+        <div class="command_description">
+          <p>武器を設定できるよ!</p>
+          <p>略記: w, wp, weap</p>
+          <p> m!add weapon 3 ... 3番目の武器を設定します<br>m!add weapon spyra ... spyraを武器に設定します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add item [名称]</p>
+        <div class="command_description">
+          <p>アイテムを追加できるよ!名前を教えてくれたら、全種類の中から探すからね!</p>
+          <p>略記: i</p>
+          <p> 検索対象が全種類で広いから、思っているものと違うアイテムとマッチする可能性もあるよ>
+            < また、全種類対応だから各種類のアイテム番号は使えないよ.。<br>m!add item myocat ... myocatという名前のアイテムを全種類から検索して追加します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add head [番号|名称]</p>
+        <div class="command_description">
+          <p>頭装飾を設定できるよ!</p>
+          <p>略記: h, hd</p>
+          <p> m!add head 4 ... 4番目の頭装飾を設定します<br>m!add head M.CHIKEN ... M.CHIKENという名前の頭装飾を設定します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>add base [番号|名称]</p>
+        <div class="command_description">
+          <p>白黒を設定できるよ!。</p>
+          <p>略記: s, bs</p>
+          <p> m!add base 0 ... 0番目の色を設定します(白色)<br>m!add base choco ... chocoを設定します（黒色)</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list [種類]</p>
+        <div class="command_description">
+          <p>その種類のアイテム一覧を表示するよ!</p>
+          <p> m!list character ... キャラクターのリストを表示します<br>m!list weapon ... 武器のリストを表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list back</p>
+        <div class="command_description">
+          <p>背中装飾のリストを表示するよ!</p>
+          <p>略記: b, bc, bk</p>
+          <p> m!list back ... 背中装飾のリストを表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list character</p>
+        <div class="command_description">
+          <p>キャラクターのリストを表示するよ!</p>
+          <p>略記: c, ch, char</p>
+          <p> m!list weapon ... 武器のリストを表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list head</p>
+        <div class="command_description">
+          <p>頭装飾のリストを表示するよ!</p>
+          <p>略記: h, hd</p>
+          <p> m!list head ... 頭装飾のリストを表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list base</p>
+        <div class="command_description">
+          <p>白黒のリストを表示するよ!この場合は白と黒の二つしかないんだけどね💦</p>
+          <p>略記: s, bs</p>
+          <p> m!list base ... キャラ色のリストを表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list body</p>
+        <div class="command_description">
+          <p>体装飾のリストを表示するよ!</p>
+          <p>略記: d, bd, by</p>
+          <p> m!list body ... 体装飾のリストを表示します</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>list weapon</p>
+        <div class="command_description">
+          <p>武器のリストを表示するよ!</p>
+          <p>略記: w, wp, weap</p>
+          <p> m!list character ...キャラクターのリストを表示します</p>
+        </div>
+      </div>
+    </div>
+    <div id="Information">
+      <h1>Information</h1>
+      <p>色々な情報の設定をするよ!</p>
+      <div class="command_box" id="open_command">
+        <p>invite</p>
+        <div class="command_description">
+          <p>BOTの招待リンクを表示するよ!是非いろんなサーバーに招待してね!。</p>
+          <p>略記: inv</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>info</p>
+        <div class="command_description">
+          <p>BOTに関する情報を表示するよ!。</p>
+          <p>略記: about</p>
+        </div>
+      </div>
+      <div class="command_box" id="open_command">
+        <p>ping</p>
+        <div class="command_description">
+          <p>BOTの反応速度を計測するよ!。</p>
+          <p>略記: pg</p>
+        </div>
+      </div>
+    </div>
+    <!-- コマンドセクション終了 -->
+  </div>
+  <div id="page_top"><a href="#"></a></div>
+  <div class="footer">
+    <div class="footer_images"> <a href="./links/server" target="_blank"><img src="./images/discord.png"></a> <a href="./links/twitter" target="_blank"><img src="./images/twitter.png"></a> <a href="./links/github" target="_blank"><img src="./images/github.png"></a> </div>
+    <div class="footer_buttons"> <a href="./links/term">利用規約</a> <a href="./links/donate">寄付</a> <a href="./links/server">サポート</a> <a href="./links/appeal">異議申し立て</a> </div>
+    <p> ©2020 MafuWorld All rights reserved. <br> </p>
+  </div>
+</body>
+</html>
