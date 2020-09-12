@@ -3,23 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Home | MilkCoffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./icon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <div class="header">
-      <div>MilkCoffee</div>
-      <ul>
+      <div class="header_title">MilkCoffee</div>
+      <ul class="pc_menu">
         <li class="header_menu"> <a href="#">コマンド一覧</a> </li>
         <li class="header_menu"> <a href="#">使い方</a> </li>
         <li class="header_invite_button"> <a href="#">BOTを招待</a> </li>
       </ul>
+      <img class="phone_menu_open" id="open_menu" src="open.png" alt="">
+      <div class="phone_menu">
+        <img class="phone_menu_close" id="close_menu" src="close.png" alt="">
+        <ul>
+          <li> <a href="">コマンド一覧</a> </li>
+          <li> <a href="#">使い方</a> </li>
+          <li class="header_invite_button"> <a href="#">BOTを追加</a> </li>
+        </ul>
+      </div>
     </div>
     <div class="content">
       <h1>MilkCoffee公式サイトへようこそ!</h1>
       <p>
         MilkCoffeeとはMilkChocoをプレイする人たちのDiscordサーバーをちょっぴり便利にするDiscordBOTです♪ <br>
-        
+
         このBOTは公式(GameParadiso)が運営するBOTではありません。ただし、画像の使用許可は頂いております。
       </p>
       <h1>主な機能</h1>

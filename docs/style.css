@@ -12,12 +12,50 @@ body {
   height: 125px;
 }
 
-.header div {
+.phone_menu_open {
+  height: 100px;
+  float: right;
+  display: none;
+}
+
+.phone_menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 80%;
+  display: none;
+  background-color: rgba(152, 251, 152, 0.85);
+  z-index: 2;
+}
+
+@media screen and (max-width: 890px) {
+  .phone_menu_open {
+    display: inline-block;
+  }
+  .phone_menu_close {
+    height: 100px;
+    float: right;
+  }
+  .pc_menu {
+    display: none;
+  }
+}
+
+
+
+.header_title {
   width:275px;
   font-size: 50px;
   float: left;
   padding: 0px;
   margin: 0px 0px 0px 10px;
+}
+@media screen and (max-width: 890px) {
+  .header_title {
+    width: 150px;
+    font-size: 30px;
+    margin: 10px;
+  }
 }
 
 .header ul {
@@ -52,6 +90,7 @@ body {
 
 .content {
   padding: 0px 50px;
+  position: relative;
 }
 
 .content p {
@@ -63,6 +102,8 @@ body {
 }
 
 .features {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
@@ -76,11 +117,21 @@ body {
   margin: auto 0px;
 }
 
+
 .features li img {
   width: 300px;
   float: left;
   margin: 0px 10px 0px 0px;
   border-radius: 20px;
+}
+@media screen and (max-width: 890px) {
+  .features li {
+    width: 100%;
+  }
+  .features li img {
+    float:none;
+    width: 100%;
+  }
 }
 
 
@@ -104,4 +155,9 @@ body {
   color: white;
   font-size: 30px;
   line-height: 100px;
+}
+@media screen and (max-width: 890px) {
+  .feature_invite_button {
+    width: 100%;
+  }
 }
