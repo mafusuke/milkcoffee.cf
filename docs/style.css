@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('bg.png');
+  background-size: cover;
+}
+
+.header {
+  height: 125px;
+}
+
+.header div {
+  width:275px;
+  font-size: 50px;
+  float: left;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+}
+
+.header ul {
+  margin: 10px;
+  padding: 0px;
+  float: right;
+  list-style: none;
+}
+
+.header li {
+  margin: 10px 20px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.header li a {
+  text-decoration: none;
+}
+.header_menu a {
+  color: #391614;
+}
+
+.header_invite_button {
+  padding: 10px;
+  background-color: #cc33ff;
+  border-radius: 40px 0px 0px 40px;
+}
+
+.header_invite_button a {
+  color: white;
+}
+
+.content {
+  padding: 0px 50px;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.fearture_box {
+  width: 400px;
+}
+
+.features {
+  list-style: none;
+}
+
+.features li {
+  display: inline-block;
+  width: 500px;
+  margin: 10px;
+}
+
+.features li p {
+  margin: auto 0px;
+}
+
+.features li img {
+  width: 300px;
+  float: left;
+  margin: 0px 10px 0px 0px;
+  border-radius: 20px;
+}
+
+
+.feature_invite_button {
+  border-radius: 20px;
+  background-color: #cc33ff;
+  width: 300px;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+}
+
+.feature_invite_button a {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  line-height: 100px;
+}
