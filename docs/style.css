@@ -8,6 +8,10 @@ body {
   background-size: cover;
 }
 
+.cmd_wrap {
+  background-color: #c0c0c0;
+}
+
 .header {
   height: 125px;
 }
